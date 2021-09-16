@@ -1,0 +1,10 @@
+{
+  "serverPort": 4000,
+  "db": {
+    "host": "localhost",
+    "dialect": "postgres",
+    "database": "cms2",
+    "username": "postgres",
+    "password": "Juanca00"
+  }
+}

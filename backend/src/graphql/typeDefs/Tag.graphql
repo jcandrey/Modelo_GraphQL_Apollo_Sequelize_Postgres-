@@ -1,0 +1,11 @@
+type Tag {
+  id: UUID
+  name: String!
+}
+
+# en lugar de crear aqui la Mutation la
+# vamos a crear en el Post gracias a merge-graphql-schema
+
+input TagsInput {
+  name: String!
+}

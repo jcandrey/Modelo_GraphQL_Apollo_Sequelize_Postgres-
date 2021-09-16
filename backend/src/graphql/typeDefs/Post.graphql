@@ -1,0 +1,31 @@
+type Post {
+  id: UUID
+  userid: String!
+  title: String!
+  slug: String!
+  content: String!
+  readingTime: String!
+  languaje: String!
+  image: String!
+  published: Boolean!
+  createdAt: Datetime!
+  updatedAt: Datetime!
+  #   insertamos los tags relacionados con este post
+  tags: [Tag!]
+}
+
+type Query {
+  getPosts: [Post!]
+}
+
+type Mutation {
+  createPost(input: CreatePostInput): Post!
+}
+
+input CreatePostInput {
+  title: String!
+  slug: String!
+  content: String!
+  userId: UUID!
+  tags: [TagsInput]
+}
