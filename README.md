@@ -33,3 +33,6 @@ hacer todo esto siempre dentro de la carpeta backend.
     NO USAR ESTE COMANDO!! npx sequelize-cli db:migrate (este comando genera las tablas en postgres y las podemos ver con el Pg-admin)
 11) npm i merge-graphql-schemas
 12) en el archivo index.js de mosels, modificar la constante models segun los modelos que declare
+13) Para poder manejar JSONB utilizar https://www.npmjs.com/package/json-to-graphql-query
+14) Para poder ingresar en el front JSONB instalar en el front https://www.npmjs.com/package/react-json-editor-ajrm
+
